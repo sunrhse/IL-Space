@@ -1,16 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IL Space</title>
+    <link rel="stylesheet" href="../static/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="../scripts/script.js"></script>
 </head>
+
 <body>
-    <h1>portfolio</h1>
-    <p>
-        nome: isaura de lourdes pereira batista
-        turma: 1 ads
-        fatec sjc
-    </p>
+    <header class="header_background" id="header">
+        <nav>
+            <a href="#about">sobre mim | </a>
+            <a href="#portfolio">portfólio | </a>
+            <a href="#contact">contato </a>
+        </nav>
+        <!--imagem de quebra-->
+    </header>
+    <main>
+        <section id="about">
+            <h1 class="greeting">bem-vindo</h1>
+            <p class="about_1">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                essentially unchanged.
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <div class="about_container">
+                <img src="../static/media/me.png" alt="me">
+                <p class="about_2">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout.
+                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                    opposed to using 'Content here, content here', making it look like readable English.
+                    Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                    text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
+                    humour and the like).
+                </p>
+            </div>
+
+        </section>
+        <hr>
+        <section>
+            <!--carrosel de fotos-->
+        </section>
+        <section>
+            <div class="skills_container">
+                <div class="skills_block">
+                    <h3>coder</h3>
+                    <p>Desenvolvimento Front-end</p>
+                    <p>HTML/CSS</p>
+                    <p>JavaScript</p>
+                </div>
+                <img src="../static/media/skills_cat.png" alt="cat" class="skills_cat">
+                <div class="skills_block">
+                    <h3>designer</h3>
+                    <p>UI design</p>
+                    <p>UX design</p>
+                    <p>Identidade de marca</p>
+                </div>
+            </div>
+        </section>
+        <hr class="skills_hr" />
+        <section class="curiosities_section">
+            <h1 class="curiosities">curiosidades</h1>
+            <div class="grid_curiosities">
+                <img src="../static/media/flowers.png" alt="flowers petals" class="flowers" id="flower_top">
+                <div class="curiosities_list">
+                    <p>Eu adoro estrelas</p>
+                    <p>Eu não sei qual é minha cor favorita</p>
+                    <p>Gosto de 'Grandmacore'</p>
+                    <p>Eu bebo muito chá</p>
+                    <p>Eu amo preparar doces</p>
+                    <p>Passear em livrarias é um hobby para mim</p>
+                    <p>Eu tenho um scrapbook</p>
+                </div>
+                <img src="../static/media/flowers.png" alt="flowers petals" class="flowers" id="flower_middle">
+                <img src="../static/media/flowers.png" alt="flowers petals" class="flowers" id="flower_bottom">
+                <img src="../static/media/flowers.png" alt="flowers petals" class="flowers" id="flower_bottom2">
+                <img src="../static/media/flowers.png" alt="flowers petals" class="flowers" id="flower_bottom3">
+            </div>
+            <!--imagem de quebra-->>
+        </section>
+        <hr />
+        <section>
+            <h1 class="my_skills">minhas habilidades</h1>
+            <div class="y-axis">
+                <div class="y-value">supernova</div>
+                <div class="y-value">cataclísmica</div>
+                <div class="y-value">estrela</div>
+                <div class="y-value">cosmos</div>
+            </div>
+            <div class="chart-container">
+                <div class="bars">
+                    <div class="bar bar1" style="--value: 200px">A</div>
+                    <div class="bar bar2" style="--value: 150px">B</div>
+                    <div class="bar bar3" style="--value: 100px">C</div>
+                    <div class="bar bar4" style="--value: 220px">D</div>
+                </div>
+            </div>
+            </div>
+            <!--imagem de quebra-->
+        </section>
+        <section id="portfolio">
+            <h1 class="portfolio">portfólio</h1>
+            <h2 id="subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+            <p>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                essentially unchanged.
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <!--carrossel com projetos-->
+        </section>
+        <hr>
+        <section>
+            <h1 class="curriculum">cv</h1>
+            <!--box com curriculo-->
+            <!--imagem de quebra-->>
+        </section>
+        <section id="contact">
+            <h1 class="talk_with_me">fale comigo</h1>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p>
+            <nav class="social_media">
+                <a href="https://www.linkedin.com/in/isaura-de-lourdes-0561742aa/" target="_blank">
+                    <i class="fab fa-linkedin linkedin"></i>
+                </a>
+                <a href="https://github.com/sunrhse" target="_blank">
+                    <i class="fab fa-github github"></i>
+                </a>
+                <a href="https://www.instagram.com/sunrhse/" target="_blank">
+                    <i class="fab fa-instagram instagram"></i>
+                </a>
+            </nav>
+            <h2 class="send_email">me mande um email</h2>
+            <form action="https://formsubmit.co/isauralourdes23@gmail.com" method="post" class="email_form">
+                <input type="text" name="name" id="name" placeholder="Nome:" required>
+                <input type="email" name="email" id="email" placeholder="E-mail:" required>
+                <input type="text" name="msg" id="msg" placeholder="Mensagem:" required>
+                <input type="submit" value="Enviar" name="btn-send" id="btn-send">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="../static/media/footer_background.png" alt="footer_background" class="footer_background">
+        <div class="footer">
+            <p style="font-family: 'Julius Sans One'; letter-spacing: 0.5px;">Sâo José dos Campos, SP</p>
+            <a href="#header">Ir para o topo ↑</a>
+        </div>
+
+    </footer>
 </body>
 </html>
