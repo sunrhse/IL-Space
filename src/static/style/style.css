@@ -1,1 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Julius+Sans+One&display=swap');
 
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+nav a
+{
+    font-family: 'Julius Sans One';
+    font-size: 20px;
+    color: #A87E44;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+nav a:visited
+{
+    color: #A87E44;
+}
+
+h1
+{
+    font-family: 'Julius Sans One';
+    font-size: 20px;
+    color: #A87E44;
+    letter-spacing: 0.5px;
+}
+
+#subtitle
+{
+    font-family: 'Inder';
+    font-size: 18px;
+    color: #B3937A;
+}
+
+h2
+{
+    font-family: 'Julius Sans One';
+    font-size: 18px;
+    color: #B3937A;
+}
+
+h3
+{
+    font-family: 'Julius Sans One';
+    font-family: 16px;
+    color: #816657;
+    letter-spacing: 0.5px;
+}
+
+p
+{
+    font-family: 'Inder';
+    font-size: 16px;
+    color: #5F2F0A;
+    letter-spacing: 0.5px;
+}
+
+.header_background
+{
+    background-image: url('../media/header_background.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    opacity: 90%;
+}
+
+.header_mountains
+{
+    margin-top: 10%;
+}
+
+.greeting{
+    text-align: center;
+}
+
+.about_1
+{
+    text-align: justify;
+    margin-left: 1.5%;
+    margin-right: 2%;
+    margin-top: 3.5%;
+}
+
+.about_container
+{
+    display: flex;
+    align-items: center;
+    gap: 0.5%x;
+}
+
+.about_2
+{
+    text-align: justify;
+    margin-right: 2%;
+}
+
+hr
+{
+  width: 80%;
+  border: 0.25px solid #BFAC9A;
+  margin: 0 auto;
+}
+
+.skills_hr
+{
+  margin-top: 2.5%;
+}
+
+.skills_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.skills_block
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills_block h3
+{
+    padding-bottom: 5%;
+}
+
+.skills_cat
+{
+    margin-right: 10%;
+}
+
+.skills_hr
+{
+  margin: 0 auto;
+  width: 90%;
+  border: 0;
+  border-top: 1px solid #a47b51;
+}
+
+.curiosities_section
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.curiosities
+{
+  font-size: 1.5rem;
+  color: #a47b51;
+  margin-bottom: 2rem;
+}
+
+.grid_curiosities
+{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+
+/* 🟨 Flor no topo (1x 1y) */
+#flower_top
+{
+  grid-column: 1;
+  grid-row: 1;
+  margin-right: 15%;
+  margin-top: 5%;
+  width: 250px;
+}
+
+/* 📋 Lista central (2x 2y) */
+.curiosities_list {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  text-align: justify;
+  margin-left: 20%;
+  margin-top: 25%;
+}
+
+
+/* 🟨 Flor meio direita (3x 2y) */
+#flower_middle
+{
+  grid-column: 3;
+  grid-row: 2;
+  width: 270px;
+  margin-right: 440%;
+  margin-top: -70%;
+  transform: skew(10deg, 15deg);
+ 
+}
+
+/* 🟨 Flor base (3x 3y) */
+#flower_bottom
+{
+  grid-column: 3;
+  grid-row: 2;
+  width: 250px;
+  margin-right: 270%;
+}
+#flower_bottom2
+{
+  grid-column: 3;
+  grid-row: 2;
+  width: 250px;
+  margin-right: 100%;
+  margin-top: -20%;
+}
+
+#flower_bottom3
+{
+  grid-column: 3;
+  grid-row: 2;
+  width: 250px;
+  margin-left: 20%;
+  margin-top: 40%;
+  transform: skew(10deg, 15deg);
+}
+
+.fence_img
+{
+  margin-top: 2rem;
+  max-width: 90%;
+}
+
+.my_skills
+{
+  margin-top: 5%;
+  text-align: right;
+  margin-right: 5%  ;
+}
+
+.chart-container
+{
+  display: flex;
+  align-items: flex-end;
+  height: 250px;
+  width: 500px;
+  padding: 20px;
+  position: relative;
+  border-left: 2px solid #ADA76A;
+  border-bottom: 2px solid #ADA76A;
+}
+
+.y-axis
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  margin-left: 2%;
+  text-align: left;
+}
+
+.y-value
+{
+  font-family: 'Julius Sans One';
+  font-size: 16px;
+  color: #B3937A;
+  text-align: right;
+  width: 100px; 
+}
+
+  
+.bars
+{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-left: 30px;
+  width: 100%;
+}
+  
+.bar1
+{
+  width: 70px;
+  background: #C5D0AB;
+  color: white;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  height: 0;
+  animation: grow 1s forwards;
+  animation-delay: calc(var(--value) * 0.01s);
+  position: relative;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.bar2
+{
+  width: 70px;
+  background: #FADED7;
+  color: white;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  height: 0;
+  animation: grow 1s forwards;
+  animation-delay: calc(var(--value) * 0.01s);
+  position: relative;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.bar3
+{
+  width: 70px;
+  background: #B7BE8D;
+  color: white;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  height: 0;
+  animation: grow 1s forwards;
+  animation-delay: calc(var(--value) * 0.01s);
+  position: relative;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.bar4
+{
+  width: 70px;
+  background: #CDBAA5;
+  color: white;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  height: 0;
+  animation: grow 1s forwards;
+  animation-delay: calc(var(--value) * 0.01s);
+  position: relative;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+  
+.bar1:hover
+{
+  transform: scale(1.2);
+  background: #C5D0AB;
+  z-index: 1;
+}
+
+.bar2:hover
+{
+  transform: scale(1.2);
+  background: #FADED7;
+  z-index: 1;
+}
+
+.bar3:hover
+{
+  transform: scale(1.2);
+  background: #B7BE8D;
+  z-index: 1;
+}
+
+.bar4:hover
+{
+  transform: scale(1.2);
+  background: #CDBAA5;
+  z-index: 1;
+}
+  
+.bar::before
+{
+  content: attr(--value);
+  position: absolute;
+  top: -25px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+}
+  
+@keyframes grow
+{
+  to
+  {
+    height: var(--value);
+  }
+}
+
+.portfolio
+{
+  text-align: center;
+  margin-top: 5%;
+}
+
+
+#subtitle
+{
+  margin-top: 2.5%;
+  text-align: center;
+}
+
+#portfolio p
+{
+  text-align: justify;
+  margin-left: 1.5%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+.curriculum
+{
+  text-align: center;
+  margin-top: 5%;
+}
+
+.talk_with_me
+{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+#contact p
+{
+  text-align: center;
+}
+
+.social_media
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 80px;
+  margin-top: 1%;
+}
+
+.linkedin, .github, .instagram
+{
+  font-size: 37.5px;
+  color: #B3937A;
+  margin-top: 2%;
+}
+
+.send_email
+{
+  margin-left: 1.5%;
+}
+
+.email_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+.email_form input[type="text"], .email_form input[type="email"] {
+  background-color: transparent;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  height: 45px;
+}
+
+.email_form input[type="text"]:focus, .email_form input[type="email"]:focus
+{
+  box-shadow: 0 0 10px rgba(241, 137, 191, 0.5);
+}
+
+#msg {
+  height: 120px; /* Faz o input parecer uma área de mensagem */
+  grid-column: 2 / 3;
+  grid-row: 1 / span 2;
+  padding-top: 20px;
+}
+
+#btn-send {
+  background-color: #c7c2c2;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #222;
+  grid-column: 2 / 3;
+  justify-self: end;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#btn-send:hover {
+  background-color: #b5afaf;
+}
+
+
+.footer
+{
+ background-color: #FCDDAC;
+ font-family: 'Julius Sans One';
+ letter-spacing: 0.5px;
+ color: #AA7F4A;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ padding-left: 1.5%;
+ padding-right: 1.5%;
+}
+
+.footer a
+{
+  text-decoration: none;
+}
+
+.footer a:visited
+{
+  color: #AA7F4A;
+}
