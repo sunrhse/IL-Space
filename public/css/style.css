@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Julius+Sans+One&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+
+nav a
+{
+    font-family: 'Julius Sans One';
+    font-size: 20px;
+    color: #A87E44;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+nav a:visited
+{
+    color: #A87E44;
+}
+
+h1
+{
+    font-family: 'Julius Sans One';
+    font-size: 20px;
+    color: #A87E44;
+    letter-spacing: 0.5px;
+}
+
+#subtitle
+{
+    font-family: 'Inder';
+    font-size: 18px;
+    color: #B3937A;
+}
+
+h2
+{
+    font-family: 'Julius Sans One';
+    font-size: 18px;
+    color: #B3937A;
+}
+
+h3
+{
+    font-family: 'Julius Sans One';
+    font-family: 16px;
+    color: #816657;
+    letter-spacing: 0.5px;
+}
+
+p
+{
+    font-family: 'Inder';
+    font-size: 16px;
+    color: #5F2F0A;
+    letter-spacing: 0.5px;
+}
