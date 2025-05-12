@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Julius+Sans+One&display=swap');
+
+.images_container
+{
+  margin-top: 1%;
+}
+
+.img_box
+{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+}
+
+.img_box img
+{
+  width: 15%;
+  background-color: transparent;
+  border: none;
+  padding: 2.5px;
+  border-radius: 5px;
+  color: #333;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+hr
+{
+  width: 80%;
+  border: 0.25px solid #BFAC9A;
+  margin: 0 auto;
+}
+
+.skills_hr
+{
+  margin-top: 2.5%;
+}
+
+.skills_container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.skills_block
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills_block h3
+{
+    padding-bottom: 5%;
+}
+
+.skills_cat
+{
+    margin-right: 10%;
+}
+
+.skills_hr
+{
+  margin: 0 auto;
+  width: 90%;
+  border: 0;
+  border-top: 1px solid #a47b51;
+}
