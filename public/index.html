@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IL Space</title>
     <link rel="stylesheet" href="../static/style/style.css">
+    <link rel="stylesheet" href="../static/style/about.css">
+    <link rel="stylesheet" href="../static/style/chart.css">
+    <link rel="stylesheet" href="../static/style/contact.css">
+    <link rel="stylesheet" href="../static/style/curiosities.css">
+    <link rel="stylesheet" href="../static/style/curriculum.css">
+    <link rel="stylesheet" href="../static/style/footer.css">
+    <link rel="stylesheet" href="../static/style/header.css">
+    <link rel="stylesheet" href="../static/style/projects.css">
+    <link rel="stylesheet" href="../static/style/skills.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="../scripts/script.js"></script>
 </head>
-
 <body>
     <header class="header_background" id="header">
+        <!--imagem de background-->
         <nav>
             <a href="#about">sobre mim | </a>
             <a href="#portfolio">portfólio | </a>
@@ -48,7 +56,15 @@
         </section>
         <hr>
         <section>
-            <!--carrosel de fotos-->
+            <div class="images_container">
+                <div class="img_box">
+                    <img src="../static/media/5.png" alt="Imagem 1">
+                    <img src="../static/media/4.png" alt="Imagem 2">
+                    <img src="../static/media/2.png" alt="Imagem 3">
+                    <img src="../static/media/3.png" alt="Imagem 4">
+                    <img src="../static/media/1.png" alt="Imagem 5">
+                </div>
+            </div>
         </section>
         <section>
             <div class="skills_container">
@@ -86,25 +102,38 @@
                 <img src="../static/media/flowers.png" alt="flowers petals" class="flowers" id="flower_bottom2">
                 <img src="../static/media/flowers.png" alt="flowers petals" class="flowers" id="flower_bottom3">
             </div>
-            <!--imagem de quebra-->>
+            <!--imagem de quebra-->
         </section>
         <hr />
         <section>
             <h1 class="my_skills">minhas habilidades</h1>
-            <div class="y-axis">
-                <div class="y-value">supernova</div>
-                <div class="y-value">cataclísmica</div>
-                <div class="y-value">estrela</div>
-                <div class="y-value">cosmos</div>
-            </div>
-            <div class="chart-container">
-                <div class="bars">
-                    <div class="bar bar1" style="--value: 200px">A</div>
-                    <div class="bar bar2" style="--value: 150px">B</div>
-                    <div class="bar bar3" style="--value: 100px">C</div>
-                    <div class="bar bar4" style="--value: 220px">D</div>
+            <div class="center-wrapper">
+                <div class="chart-container">
+                    <div class="y-axis">
+                        <div class="y-value">supernova</div>
+                        <div class="y-value">cataclísmica</div>
+                        <div class="y-value">estrela</div>
+                        <div class="y-value">cosmos</div>
+                    </div>
+                    <div class="bars">
+                        <div class="bar bar1" style="--value: 200px">
+                            <p>90%</p>
+                            Figma
+                        </div>
+                        <div class="bar bar2" style="--value: 220px">
+                            <p>95%</p>
+                            Amar estrelas
+                        </div>
+                        <div class="bar bar3" style="--value: 170px">
+                            <p>70%</p>
+                            Javascript
+                        </div>
+                        <div class="bar bar4" style="--value: 240px">
+                            <p>97%</p>
+                            Design
+                        </div>
+                    </div>
                 </div>
-            </div>
             </div>
             <!--imagem de quebra-->
         </section>
@@ -119,12 +148,17 @@
                 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
                 more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
-            <!--carrossel com projetos-->
+            <div class="projects">
+                <a href="../static/media/inova apps.png"><img src="../static/media/inova apps (1).png" alt=""></a>
+                <a href="https://github.com/Gabrielle0905/SIRAAS/tree/main"><img src="../static/media/siraas.png" alt=""></a>
         </section>
         <hr>
         <section>
             <h1 class="curriculum">cv</h1>
-            <!--box com curriculo-->
+            <div class="box-container" id="cvBox">
+                <iframe src="/Isaura de Lourdes Pereira BAtista.pdf"></iframe>
+                <div class="box-toggle" onclick="toggleBox()">▼ Ver mais</div>
+            </div>
             <!--imagem de quebra-->>
         </section>
         <section id="contact">
@@ -154,12 +188,11 @@
         </section>
     </main>
     <footer>
-        <img src="../static/media/footer_background.png" alt="footer_background" class="footer_background">
+        <!--imagem de background-->
         <div class="footer">
             <p style="font-family: 'Julius Sans One'; letter-spacing: 0.5px;">Sâo José dos Campos, SP</p>
             <a href="#header">Ir para o topo ↑</a>
         </div>
-
     </footer>
 </body>
 </html>
