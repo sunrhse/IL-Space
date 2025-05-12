@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Julius+Sans+One&display=swap');
+
+.talk_with_me
+{
+  text-align: center;
+  margin-top: 1.5%;
+  margin-bottom: 2%;
+}
+
+#contact p
+{
+  text-align: center;
+}
+
+.social_media
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 80px;
+  margin-top: 1%;
+}
+
+.linkedin, .github, .instagram
+{
+  font-size: 37.5px;
+  color: #B3937A;
+  margin-top: 2%;
+}
+
+.send_email
+{
+  margin-left: 1.5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.email_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+#name, #email
+{
+  background-color: transparent;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  height: 50px;
+}
+
+#msg
+{
+  background-color: transparent;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  height: 50px;
+}
+
+.email_form input[type="text"]:focus, .email_form input[type="email"]:focus
+{
+  box-shadow: 0 0 10px rgba(241, 137, 191, 0.5);
+}
+
+#msg {
+  height: 120px; /* Faz o input parecer uma área de mensagem */
+  grid-column: 2 / 3;
+  grid-row: 1 / span 2;
+  padding-top: 20px;
+}
+
+#btn-send {
+  font-family: 'Julius Sans One';
+  background-color: #cdb38d;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #937249;;
+  grid-column: 2 / 3;
+  justify-self: end;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#btn-send:hover {
+  background-color: #b69c77;
+}

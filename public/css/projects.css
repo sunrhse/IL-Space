@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Julius+Sans+One&display=swap');
+
+.portfolio
+{
+  text-align: center;
+  margin-top: 5%;
+}
+
+
+#subtitle
+{
+  margin-top: 2.5%;
+  text-align: center;
+}
+
+#portfolio p
+{
+  text-align: justify;
+  margin-left: 1.5%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+.projects
+{
+  display: flex;
+  justify-content: center;
+}
+
+.projects img{
+  width: 300px;
+  padding: 50px;
+}

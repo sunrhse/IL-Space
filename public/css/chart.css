@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Julius+Sans+One&display=swap');
+
+.my_skills
+{
+  margin-top: 5%;
+  text-align: right;
+  margin-right: 5%  ;
+}
+
+.center-wrapper {
+  margin-left: 12%;
+}
+
+
+.chart-container {
+  margin-top: 5%;
+  display: flex;
+  align-items: flex-end;
+  height: 250px;
+  width: 800px;
+  padding: 20px;
+  position: relative;
+  border-bottom: 2px solid #e2e2e2;
+  gap: 15%;
+  margin-left: 10%;
+}
+
+.y-axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  text-align: justify;
+  width: 100px;
+}
+
+.y-value {
+  font-family: 'Julius Sans One';
+  font-size: 16px;
+  color: #B3937A;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex: 1;
+  height: 100%;
+  font-family: 'Inder';
+}
+
+.bars p
+{
+  color: white;
+}
+
+.bar
+{
+  width: 100px;
+  color: white;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  height: 0;
+  animation: grow 1s forwards;
+  animation-delay: calc(var(--value) * 0.01s);
+  position: relative;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}  
+
+.bar1
+{
+  background: #C5D0AB;
+}
+
+.bar1 p, .bar2 p
+{
+  margin-top: 150%;
+}
+
+.bar3 p
+{
+  margin-top: 120%;
+}
+
+.bar4 p
+{
+  margin-top: 190%;
+}
+
+.bar2
+{
+  background: #e6c5bd;
+}
+
+.bar3
+{
+  background: #B7BE8D;
+}
+
+.bar4
+{
+  background: #CDBAA5;
+}
+  
+.bar1:hover
+{
+  transform: scale(1.2);
+  background: #C5D0AB;
+  z-index: 1;
+}
+
+.bar2:hover
+{
+  transform: scale(1.2);
+  background: #e6c5bd;
+  z-index: 1;
+}
+
+.bar3:hover
+{
+  transform: scale(1.2);
+  background: #B7BE8D;
+  z-index: 1;
+}
+
+.bar4:hover
+{
+  transform: scale(1.2);
+  background: #CDBAA5;
+  z-index: 1;
+}
+  
+.bar::before
+{
+  content: attr(--value);
+  position: absolute;
+  top: -25px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+}
+  
+@keyframes grow
+{
+  to
+  {
+    height: var(--value);
+  }
+}
