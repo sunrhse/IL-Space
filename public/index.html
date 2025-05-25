@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IL Space</title>
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/certifcates.css">
     <link rel="stylesheet" href="./css/chart.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/curiosities.css">
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="./css/skills.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="./img/icon.png" type="image/png">
     <script src="./js/script.js"></script>
 </head>
 <body>
@@ -33,17 +35,21 @@
             <p class="about_1">
                 Oie! Eu sou a Isaura, e esse é meu portfólio (legal, né?).
                 <br>
-                Atualmente, faço ADS na Fatec de SJC, mas, cá entre nós, eu queria cursar História.
-                Desde minha fase de mini Lurdinha, sempre fui chegada em desenhos — tenho até alguns (obras-primas incompreendidas) guardados há um tempão.
+                Atualmente, curso ADS na Fatec de SJC, mas, cá entre nós, eu queria cursar História.
+                Desde minha fase de mini Lurdinha, sempre fui chegada em desenhos — tenho até alguns (obras-primas
+                incompreendidas) guardados há um tempão.
                 <br>
-                Agora, em meus plenos alguns anos de vida, adoro design e até brinco um pouco com front-end de vez em quando.
-                Pode até ser que, às vezes, meus projetos saiam um pouco muito parecidos, mas eu juro que estou tentando mudar (promessa de dedinho).
+                Agora, em meus plenos alguns anos de vida, adoro design e até brinco um pouco com front-end de vez em
+                quando.
+                Pode até ser que, às vezes, meus projetos saiam um pouco muito parecidos, mas eu juro que estou tentando
+                mudar (promessa de dedinho).
             </p>
             <div class="about_container">
                 <img src="./img/me.png" alt="me">
                 <p class="about_2">
                     Fugindo um pouco do trabalho: eu adoro gatos, de paixão.
-                    Tenho duas gatinhas que são os amores da minha vida — a Lili, de 18 aninhos, que eu ganhei assim que nasci, e a Marie, que adotei há uns 12 anos.
+                    Tenho duas gatinhas que são os amores da minha vida — a Lili, de 18 aninhos, que eu ganhei assim que
+                    nasci, e a Marie, que adotei há uns 12 anos.
                     <br>
                     Além de gatos, amo livros de romance brega e clichê — eles me deixam sonhar.
                     Minha trilogia favorita é Para Todos os Garotos que Já Amei.
@@ -52,7 +58,8 @@
                     <br>
                     Meus Pokémons favoritos são Snorlax e Psyduck, e você está proibido de me julgar!
                     <br>
-                    Ah, quase esqueci! Eu adoro fazer atividades como recorte e colagem — acho que isso abre um leque tão grande de arte que podemos criar...
+                    Ah, quase esqueci! Eu adoro fazer atividades como recorte e colagem — acho que isso abre um leque
+                    tão grande de arte que podemos criar...
                     Sempre me deixa fascinada.
                     <br>
                     Também gosto bastante de Super Mario, e meu personagem favorito é o Bowser.
@@ -109,7 +116,7 @@
             </div>
             <!--imagem de quebra-->
         </section>
-        <hr />
+        <hr>
         <section>
             <h1 class="my_skills">minhas habilidades</h1>
             <div class="center-wrapper">
@@ -147,11 +154,31 @@
             <h2 id="subtitle">Aqui ficam os projetos que eu já fiz. Dá uma olhada.</h2>
             <p>
                 Esses são alguns dos projetos que já realizei, atuando tanto sozinha quanto em grupo.
-                Meu foco é, como já disse antes, no design e na criação de identidade visual — mas quem disse que eu não posso desenvolver também?
+                Meu foco é, como já disse antes, no design e na criação de identidade visual — mas quem disse que eu não
+                posso desenvolver também?
             </p>
-            <div class="projects">
-                <a href="./img/inova apps.png"><img src="./img/inova apps (1).png" alt=""></a>
-                <a href="https://github.com/Gabrielle0905/SIRAAS/tree/main"><img src="./img/siraas.png" alt=""></a>
+            <div class="projects-container">
+                <div class="projects">
+                    <div class="card" onclick="openModal('modal1')">
+                        <img src="./img/siraas.png" alt="SIRAAS">
+                    </div>
+                    <div class="card" onclick="openModal('modal2')">
+                        <img src="./img/inova apps (1).png" alt="Inova Apps" class="modal-inova-img">
+                    </div>
+                </div>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal1')">&times;</span>
+                        <iframe src="./pages/siraas.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal2')">&times;</span>
+                        <iframe src="./pages/inova.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
         <hr>
         <section>
@@ -160,12 +187,16 @@
                 <iframe src="./docs/Isaura de Lourdes Pereira BAtista.pdf"></iframe>
                 <div class="box-toggle" onclick="toggleBox()">▼ Ver mais</div>
             </div>
-            <!--imagem de quebra-->>
+            <!--imagem de quebra-->
+        </section>
+        <section>
+            <!--certificates section-->
         </section>
         <section id="contact">
             <h1 class="talk_with_me">fale comigo</h1>
             <p>
-                Se você gostou muito do meu portfólio e quer entrar em contato comigo, podemos conversar por qualquer uma das redes sociais abaixo.
+                Se você gostou muito do meu portfólio e quer entrar em contato comigo, podemos conversar por qualquer
+                uma das redes sociais abaixo.
                 Mas, se você for do tipo tradicional, pode de mandar um e-mail, não tem problema.
             </p>
             <nav class="social_media">
@@ -189,7 +220,7 @@
         </section>
     </main>
     <footer>
-        <!--imagem de background-->
+        <!--footer background-->
         <div class="footer">
             <p style="font-family: 'Julius Sans One'; letter-spacing: 0.5px;">Sâo José dos Campos, SP</p>
             <a href="#header">Ir para o topo ↑</a>
