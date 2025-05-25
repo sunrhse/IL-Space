@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+}
+
+.inova-logo{
+    width: 20%;
+    height: auto;
+    margin-top: -3rem;
+}
+
+h2{
+    font-family: 'Economica';
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+}
+
+p{
+    font-family: 'Livvic';
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.inova-identity{
+    margin: auto;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    max-width: 100%;
+    width: 20%;
+}
+
+.inova-identity:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
