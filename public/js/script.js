@@ -28,3 +28,18 @@ document.querySelectorAll('.modal-link').forEach(link => {
   });
 });
 
+const trigger = document.getElementById('triggerImage');
+const modal = document.getElementById('godzillaModal');
+const roar = document.getElementById('roarSound');
+
+trigger.addEventListener('click', () => {
+  modal.style.display = 'flex';
+  roar.currentTime = 0;
+  roar.play();
+});
+
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});
