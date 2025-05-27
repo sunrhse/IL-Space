@@ -1,30 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inder&family=Julius+Sans+One&display=swap');
 
-.images_container
-{
-  margin-top: 1%;
-}
-
-.img_box
-{
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  justify-content: center;
-}
-
-.img_box img
-{
-  width: 15%;
-  background-color: transparent;
-  border: none;
-  padding: 2.5px;
-  border-radius: 5px;
-  color: #333;
-  box-sizing: border-box;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
 hr
 {
   width: 80%;
@@ -67,4 +42,24 @@ hr
   width: 90%;
   border: 0;
   border-top: 1px solid #a47b51;
+}
+
+.divider-img1, .divider-img2{
+  width: 40%;
+}
+
+.divider-img1{
+  margin-right: 5rem;
+}
+
+.divider-img2{
+  transform: skew(5deg, 5deg);
+}
+
+.divider-img-chart{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
 }
