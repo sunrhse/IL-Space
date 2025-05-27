@@ -2,7 +2,7 @@
 
 .portfolio {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 
@@ -95,11 +95,12 @@
 .close {
   position: absolute;
   top: 12px;
-  right: 20px;
+  right: 45px;
   font-size: 32px;
   color: #555;
   font-weight: bold;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .close:hover {
