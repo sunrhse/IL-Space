@@ -6,21 +6,6 @@
   padding: 0;
 }
 
-
-nav a
-{
-    font-family: 'Julius Sans One';
-    font-size: 20px;
-    color: #A87E44;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-}
-
-nav a:visited
-{
-    color: #A87E44;
-}
-
 h1
 {
     font-family: 'Julius Sans One';
