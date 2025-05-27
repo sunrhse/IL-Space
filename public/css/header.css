@@ -4,6 +4,79 @@
 {
   display: flex;
   justify-content: center;
-  margin-top: 2%;
+  margin-top: -2%;
   margin-bottom: 2%;
+}
+
+.header-img{
+  width: 100%;
+}
+
+.img-container{
+  display: flex;
+}
+
+.header-mountains{
+  width: 100%;
+  margin-top: -17.15rem;
+}
+
+.mountain-container{
+  display: flex;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: -180%;
+}
+
+nav a
+{
+    font-family: 'Julius Sans One';
+    font-size: 20px;
+    color: #A87E44;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+nav a:visited
+{
+    color: #A87E44;
+}
+
+#divider{
+  font-family: 'Julius Sans One';
+  font-size: 20px;
+  color: #A87E44;
+  letter-spacing: 0.5px;
+}
+
+.header-btn{
+  display: inline-block;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.header-btn:hover{
+  animation: focus 0.6s ease;
+}
+
+@keyframes focus{
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(3deg);
+  }
+  75% {
+    transform: translateY(-5px) rotate(-2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
 }
