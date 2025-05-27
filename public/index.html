@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,26 +12,35 @@
     <link rel="stylesheet" href="./css/curiosities.css">
     <link rel="stylesheet" href="./css/curriculum.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/godzilla.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/skills.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="./img/icon.png" type="image/png">
-    <script src="./js/script.js"></script>
 </head>
 <body>
+    <div class="img-container">
+        <img src="./img/header.png" alt="header_background" class="header-img">
+    </div>
+    <div class="mountain-container">
+        <img src="./img/mountains.png" alt="header-mountains" class="header-mountains">
+    </div>
     <header class="header_background" id="header">
-        <!--imagem de background-->
-        <nav>
-            <a href="#about">sobre mim | </a>
-            <a href="#portfolio">portfólio | </a>
-            <a href="#contact">contato </a>
-        </nav>
-        <!--imagem de quebra-->
+        <div class="header">
+            <nav id="top">
+                <a href="#about" class="header-btn">sobre mim </a>
+                <p id="divider">|</p>
+                <a href="#portfolio" class="header-btn">portfólio </a>
+                <p id="divider">|</p>
+                <a href="#contact" class="header-btn">contato </a>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="about">
+        <section id="about" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
             <h1 class="greeting">bem-vindo</h1>
             <p class="about_1">
                 Oie! Eu sou a Isaura, e esse é meu portfólio (legal, né?).
@@ -67,18 +77,28 @@
             </div>
         </section>
         <hr>
-        <section>
+        <section data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
             <div class="images_container">
                 <div class="img_box">
                     <img src="./img/5.png" alt="Imagem 1">
                     <img src="./img/4.png" alt="Imagem 2">
                     <img src="./img/2.png" alt="Imagem 3">
-                    <img src="./img/3.png" alt="Imagem 4">
+                    <div class="godzilla-container">
+                        <img id="triggerImage" src="./img/3.png" alt="Clique aqui">
+                    </div>
+                    <div id="godzillaModal" class="godzilla-modal">
+                        <div class="godzilla-content">
+                            <img id="godzillaImage" src="./img/godzilla.png" alt="Godzilla">
+                            <div class="smoke"></div>
+                        </div>
+                    </div>
+
+                    <audio id="roarSound" src="./sound/godzilla-2021-roar.mp3" preload="auto"></audio>
                     <img src="./img/1.png" alt="Imagem 5">
                 </div>
             </div>
         </section>
-        <section>
+        <section data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
             <div class="skills_container">
                 <div class="skills_block">
                     <h3>coder</h3>
@@ -96,10 +116,12 @@
             </div>
         </section>
         <hr class="skills_hr" />
-        <section class="curiosities_section">
+        <section class="curiosities_section" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
             <h1 class="curiosities">curiosidades</h1>
             <div class="grid_curiosities">
-                <img src="./img/flowers.png" alt="flowers petals" class="flowers" id="flower_top">
+                <div class="flowers-container">
+                    <img src="./img/curiosities-flowers.png" alt="flowers petals" class="flowers" id="flower_top">
+                </div>
                 <div class="curiosities_list">
                     <p>Eu adoro estrelas</p>
                     <p>Eu não sei qual é minha cor favorita</p>
@@ -109,15 +131,10 @@
                     <p>Passear em livrarias é um hobby para mim</p>
                     <p>Eu tenho um scrapbook</p>
                 </div>
-                <img src="./img/flowers.png" alt="flowers petals" class="flowers" id="flower_middle">
-                <img src="./img/flowers.png" alt="flowers petals" class="flowers" id="flower_bottom">
-                <img src="./img/flowers.png" alt="flowers petals" class="flowers" id="flower_bottom2">
-                <img src="./img/flowers.png" alt="flowers petals" class="flowers" id="flower_bottom3">
             </div>
-            <!--imagem de quebra-->
         </section>
         <hr>
-        <section>
+        <section data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
             <h1 class="my_skills">minhas habilidades</h1>
             <div class="center-wrapper">
                 <div class="chart-container">
@@ -147,9 +164,12 @@
                     </div>
                 </div>
             </div>
-            <!--imagem de quebra-->
         </section>
-        <section id="portfolio">
+        <section id="portfolio" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <div class="divider-img-chart">
+                <img src="./img/flowers-divider.png" alt="flowers-divider" class="divider-img1">
+                <img src="./img/flowers-divider.png" alt="flowers-divider" class="divider-img2">
+            </div>
             <h1 class="portfolio">portfólio</h1>
             <h2 id="subtitle">Aqui ficam os projetos que eu já fiz. Dá uma olhada.</h2>
             <p>
@@ -163,7 +183,10 @@
                         <img src="./img/siraas.png" alt="SIRAAS">
                     </div>
                     <div class="card" onclick="openModal('modal2')">
-                        <img src="./img/inova apps (1).png" alt="Inova Apps" class="modal-inova-img">
+                        <img src="./img/inova.png" alt="Inova Apps" class="modal-inova-img">
+                    </div>
+                    <div class="card" onclick="openModal('modal3')">
+                        <img src="./img/mental-mentor.png" alt="Mental Mentor">
                     </div>
                 </div>
                 <div id="modal1" class="modal">
@@ -178,21 +201,33 @@
                         <iframe src="./pages/inova.html" frameborder="0"></iframe>
                     </div>
                 </div>
+                <div id="modal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal3')">&times;</span>
+                        <iframe src="./pages/mental-mentor.html" frameborder="0"></iframe>
+                    </div>
+                </div>
             </div>
         </section>
         <hr>
-        <section>
+        <section data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
             <h1 class="curriculum">cv</h1>
             <div class="box-container" id="cvBox">
                 <iframe src="./docs/Isaura de Lourdes Pereira BAtista.pdf"></iframe>
                 <div class="box-toggle" onclick="toggleBox()">▼ Ver mais</div>
             </div>
-            <!--imagem de quebra-->
+            <h1 class="certificates">certificações</h1>
+            <h2 id="certificates-subtitle">Esses são alguns dos certificados de cursos que eu ja fiz.</h2>
+            <div class="certificates">
+                <img src="./docs/certificado-git.png" alt="certificado-git" id="certificates-img">
+            </div>
         </section>
-        <section>
-            <!--certificates section-->
-        </section>
-        <section id="contact">
+        <hr>
+        <section id="contact" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <div class="contact-divider-container">
+                <img src="./img/contact-divider1.png" alt="contact-divider" class="contact-divider">
+                <img src="./img/contact-divider2.png" alt="contact-divider" class="contact-divider">
+            </div>
             <h1 class="talk_with_me">fale comigo</h1>
             <p>
                 Se você gostou muito do meu portfólio e quer entrar em contato comigo, podemos conversar por qualquer
@@ -201,13 +236,13 @@
             </p>
             <nav class="social_media">
                 <a href="https://www.linkedin.com/in/isaura-de-lourdes-0561742aa/" target="_blank">
-                    <i class="fab fa-linkedin linkedin"></i>
+                    <i class="fab fa-linkedin linkedin" id="icon"></i>
                 </a>
                 <a href="https://github.com/sunrhse" target="_blank">
-                    <i class="fab fa-github github"></i>
+                    <i class="fab fa-github github" id="icon"></i>
                 </a>
                 <a href="https://www.instagram.com/sunrhse/" target="_blank">
-                    <i class="fab fa-instagram instagram"></i>
+                    <i class="fab fa-instagram instagram" id="icon"></i>
                 </a>
             </nav>
             <h2 class="send_email">me mande um email</h2>
@@ -215,16 +250,22 @@
                 <input type="text" name="name" id="name" placeholder="Nome:" required>
                 <input type="email" name="email" id="email" placeholder="E-mail:" required>
                 <input type="text" name="msg" id="msg" placeholder="Mensagem:" required>
-                <input type="submit" value="Enviar" name="btn-send" id="btn-send">
+                <input type="submit" value="Enviar" name="btn-send" id="btn-send" class="btn-send">
             </form>
         </section>
     </main>
     <footer>
-        <!--footer background-->
+        <img src="./img/footer.png" alt="footer-background" class="footer-img">
         <div class="footer">
             <p style="font-family: 'Julius Sans One'; letter-spacing: 0.5px;">Sâo José dos Campos, SP</p>
-            <a href="#header">Ir para o topo ↑</a>
+            <a href="#top">Ir para o topo ↑</a>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
