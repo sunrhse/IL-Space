@@ -14,12 +14,12 @@
   overflow: hidden;
   font-family: 'Julius Sans One', sans-serif;
   transition: max-height 0.6s ease;
-  max-height: 300px; /* altura inicial (parcial) */
+  max-height: 300px;
   position: relative;
 }
 
 .box-container.expanded {
-  max-height: 900px; /* altura final (expandida) */
+  max-height: 900px;
 }
 
 .box-container iframe {
